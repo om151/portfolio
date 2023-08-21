@@ -23,9 +23,12 @@ nav{
 }
 .navbar ul{
     
-    margin-left: 580px;
+    margin-left: 620px;
+    /* padding-left: 580px; */
      margin-top: 30px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
  
 }
 
@@ -40,8 +43,9 @@ nav{
 }
 
 nav.scrolled{
+    left: 0;
     background-color: crimson;
-    width:1505px ;
+    width:100% ;
     height: 80px;
     margin-top: 8px;
     color: white;
@@ -222,6 +226,9 @@ font-size: 15px;
 .Services-section{
     background-color: #111;
     color: #fff;
+    width: 100%;
+    right: 0;
+    left: 0;
 }
 
 .Services-section .heading{
@@ -276,10 +283,6 @@ font-size: 15px;
 }
 
 
-.contact-details{
-    /* margin-left: 100px; */
-    
-}
 .contact-details-item{
     display: flex;
 }
@@ -334,11 +337,7 @@ input[type="text"],input[type="email"]{
     outline: none;
     font-family: 'Poppins', sans-serif;
 }
-input[type="text"] .subject{
-    /* padding-right: 200px; */
-    /* width: 400px; */
 
-}
 
 .form .btn{
     
@@ -357,11 +356,6 @@ input[type="text"] .subject{
     background-color: transparent;
     color: crimson;
 }
-
-
-
-
-
 
 
 
