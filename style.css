@@ -98,6 +98,9 @@ nav h1 span{
     font-family: 'Ubuntu', sans-serif;
     text-align: left;
 }
+.content1 span{
+    color: crimson;
+}
 .content1 h4{
     color: #999;
     margin: 0px;
@@ -361,6 +364,11 @@ input[type="text"],input[type="email"]{
 
 
 
+
+
+
+
+
 footer{
     width: 100%;
 margin: 0;
@@ -372,8 +380,6 @@ padding: 15px 23px;
 color: #fff;
 text-align: center;
 }
-
-
 footer a{
     color: crimson;
 }
