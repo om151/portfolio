@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio--Om patil</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -33,7 +33,8 @@
       <div class="content1">
         <h4>Hello, my name is</h4>
         <h1>Om Patil</h1>
-        <h3>And I'm a web designer</h3>
+        <h3>And I'm a <span id="element"></span></h3>
+        
         <button class="btn">Hire me</button>
       </div>
     </section>
@@ -49,7 +50,7 @@
         </div>
 
         <div class="about-content">
-          <h3>I'm Om patil And I'm a <span>Developer</span></h3>
+          <h3>I'm Om patil And I'm a <span id="element2"></span></h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem
             itaque sint. A illum odit eaque soluta rem rerum et accusantium
@@ -117,19 +118,15 @@
           </p>
 
           <div class="contact-details">
-
-
             <div class="contact-details-item">
               <div class="contact-details-item-logo">
                 <i class="fa-solid fa-user"></i>
               </div>
               <div class="contact-details-item-data">
                 <h6>Name</h6>
-                  <p>Om patil</p>
+                <p>Om patil</p>
               </div>
             </div>
-
-
 
             <div class="contact-details-item">
               <div class="contact-details-item-logo">
@@ -152,21 +149,30 @@
           </div>
         </div>
         <div class="form">
-<h2>Message me</h2>
-<input type="text" name="" id="" placeholder="Name">
-<input type="email" placeholder="Email">
-<input type="text" placeholder="Subject" style="width: 512px;">
-<br>
-<input type="text" placeholder="Message..." style="width: 512px;">
-<br>
-<button class="btn">Send message</button>
+          <h2>Message me</h2>
+          <input type="text" name="" id="" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" style="width: 512px" />
+          <br />
+          <input type="text" placeholder="Message..." style="width: 512px" />
+          <br />
+          <button class="btn">Send message</button>
         </div>
       </div>
     </section>
 
     <footer>
-      <span>Created By <a href="https://www.linkedin.com/in/om-patil-587a82274" target="_blank">Om patil</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
-  </footer>
+      <span
+        >Created By
+        <a href="https://www.linkedin.com/in/om-patil-587a82274" target="_blank"
+          >Om patil</a
+        >
+        | <span class="far fa-copyright"></span> 2020 All rights reserved.</span
+      >
+    </footer>
+
+    <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
       // Get the navbar element
@@ -180,6 +186,26 @@
           navbar.classList.remove("scrolled");
         }
       });
+
+
+
+      var typed = new Typed('#element', {
+      strings: [' Frontend Web designer', 'Content creator','Web developer' ],
+      typeSpeed: 50,
+    });
+
+  
+
+
+    
+      var typed = new Typed('#element2', {
+      strings: [' Frontend Web designer', 'Content creator','Web developer' ],
+      typeSpeed: 50,
+    });
+
+
+
+
     </script>
   </body>
 </html>
